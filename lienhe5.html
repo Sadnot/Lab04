@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Liên Hệ</title>
+       <link rel="shortcut icon" type="image/png" href="/data/images/favicon.ico"/>
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css"> 
+   </head>
+   <body>
+      <header>
+           <a href="#trangchu">
+               <img id="logo" src="./data/images/logo.png" alt="Không load được ảnh">
+           </a>
+           <div>
+               <img src="/data/images/header-img1.png" alt="" class="heading-img1">
+               <img src="/data/images/header-img2.png" alt="" class="heading-img2">
+               <img src="/data/images/header-img3.png" alt="" class="heading-img3">
+           </div>    
+          <nav>
+              <div class="nav-wrap">
+                  <div class="nav-link">
+                      <a href="trangchu.html">Trang Chủ</a>
+                      <a href="gioithieu.html">Giới Thiệu</a>
+                      <a href="sanpham.html">Sản Phẩm</a>
+                      <a href="tintuc.html">Tin Tức</a>
+                      <a href="dang nhap.html">Đăng Nhập</a>
+                      <a href="dangky.html">Đăng Ký</a>
+                      <a href="lienhe.html">Liên Hệ</a>  
+                  </div>
+                  <div class="nav-input">
+                    <form action="timkiem.html" class="form-input" method="get">
+                         <input type="text" name="Tên hàng" value="" id="nav-search" class="nav-search-input" onkeypress="searchInput(event)" placeholder="Nhập nội dung cần tìm...">
+                             <i class="header-input-icon1 fas fa-search"></i>
+                             <i class="header-input-icon2 fas fa-shopping-cart"></i>     
+                    </form>
+                </div>
+              </div>
+          </nav>
+      </header> 
+
+   <main>
+       <fieldset class="form-wrap">
+       <h1>Liên hệ</h1>
+       <div class="col-full">
+           <div  class="contact">
+               <div>
+                   <img src="./data/images/check-in.png" class="contact-img" alt="">
+               </div>
+               <div class="contact-text">
+                   <p>
+                       <strong>Địa chỉ: 0123, Tòa Nhà ABC, TP.Cần Thơ.</strong>
+                       Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
+                    </p>
+               </div>
+           </div>
+           <div class="col-full">
+               <form name="myForm" onsubmit="return (formValidate())" method="post" enctype="multipart/form-data">
+                    <h1>Góp ý</h1>
+                    <table >
+                        <tr>
+                            <td><label for="name"><i class="sign-up-icon far fa-user"></i></label></td>
+                            <td colspan="2">
+                                <input type="text" class="input-btn" id="name" name="name" required size="40%" placeholder="Vui lòng nhập tên của bạn"/>
+                            </td>
+                        </tr> 
+        
+                        <tr>
+                            <td><label for="email"><i class="sign-up-icon far fa-envelope"></i></label></td>
+                            <td colspan="2">
+                                <input type="email" class="input-btn" id="email" name="mail" required size="40%" placeholder="Vui lòng nhập địa chỉ Email"/>
+                            </td>
+                        </tr> 
+        
+                        <tr>
+                            <td><i class="sign-up-icon fas fa-bars"></i></td>
+                            <td>
+                                <select class="input-btn" size="1">
+                                    <option>Về Sản Phẩm/Dịch Vụ</option>
+                                    <option>Về Ưu Đãi Thành Viên</option>
+                                    <option>Về Tin Tuyển Dụng</option>
+                                    </select>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>
+                                <i class="sign-up-icon sign-up-icon_text far fa-file-alt"></i>
+                            </td>
+                            <td>
+                                <textarea name="text" required cols="50" rows="7" placeholder="Nội dung cần liên hệ"></textarea>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td>
+                                <input type="submit" value="Gửi">
+                            </td>
+                            <td></td>
+                        </tr>
+        
+                     </table>    
+                </form>
+           </div>
+        </div>
+        </fieldset>
+   </main>
+
+   <footer>
+    <span class="footer-link">
+        <p>
+            &#169 Bản quyền thuộc về FreeeVN, 
+        </p>
+        <a href="#">
+            <i class="footer-link-facebook fab fa-facebook-f"></i>
+        </a> 
+        <a href="#">
+            <i class="footer-link-twitter fab fa-twitter"></i>
+        </a> 
+        <a href="#">
+            <i class="footer-link-pinterest fab fa-pinterest"></i>
+        </a> 
+    </span>
+    <span class="footer-back">
+        <a href="#logo">
+            <img src="./data/images/top.png" alt="" class="footer-back-img">
+        </a>
+    </span>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

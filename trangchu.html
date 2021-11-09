@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" type="image/png" href="/data/images/favicon.ico"/>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css"> 
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script defer src="/jque.js"></script> -->
+    <link rel="stylesheet" href="stylelabp3.css">
+</head>
+<body>
+   
+<div class="row">
+    <div class="main-content">
+        <header>
+            <a href="#trangchu">
+                <img id="logo" src="/data/images/logo.png" alt="Không load được ảnh">
+            </a>
+            <div>
+                <img src="./data/images/header-img1.png" alt="" class="heading-img1">
+                <img src="./data/images/header-img2.png" alt="" class="heading-img2">
+                <img src="./data/images/header-img3.png" alt="" class="heading-img3">
+            </div>    
+           <nav>
+               <div class="nav-wrap">
+                   <div class="nav-link">
+                       <a href="trangchu.html">Trang Chủ</a>
+                       <a href="gioithieu.html">Giới Thiệu</a>
+                       <a href="sanpham.html">Sản Phẩm</a>
+                       <a href="tintuc.html">Tin Tức</a>
+                       <a href="dang nhap.html">Đăng Nhập</a>
+                       <a href="dangky.html">Đăng Ký</a>
+                       <a href="lienhe.html">Liên Hệ</a>  
+                   </div>
+                   <div class="nav-input">
+                       <form action="timkiem.html" class="form-input" method="get">
+                            <input type="text" name="Tên hàng" value="" id="nav-search" class="nav-search-input" onkeypress="searchInput(event)" placeholder="Nhập nội dung cần tìm...">
+                                <i class="header-input-icon1 fas fa-search"></i>
+                                <i onclick="window.location.href='donhang.html';" class="header-input-icon2 fas fa-shopping-cart"></i>     
+                       </form>
+                   </div>
+               </div>
+           </nav>
+       </header>
+     <main>
+           <article class="col-full">
+               <div id="trangchu">
+                   <img src="./data/images/trangchu/bg-home.jpg" alt="Không load được ảnh" class="col-full">
+                   <div class="newproduct">
+                       <h1>Sản Phẩm Mới</h1>
+                       <div class="col_3-7">
+                           <div>
+                               <h2>Sữa chua tốt cho sức khỏe</h2>
+                               <img src="./data/images/trangchu/yogurt.jpg" class="vid-img" alt="Không load được ảnh">
+                           </div>
+                           <div>
+                               <p style="padding-top: 18px";>
+                                Học làm sữa chua tại gia cùng chuyên gia.Trong thực đơn dinh dưỡng của các bà mẹ cho con trẻ và các thành viên trong gia đình đều không
+                                thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kì tốt cho sức khỏe này. Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp đã 
+                                được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nhà. Như vậy, liệu sữa chua nhà làm và sữa chua công 
+                                nghiệp thì loại nào tốt sức khỏe của chúng ta hơn? Nếu là một người yêu thích nấu ăn bạn sẽ chọn sữa nhà làm hay mua sữa chua công nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ.
+                                <a href="#">Xem chi tiết</a>
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+    
+                   <div class="members">
+                       <h1>Góc Thành Viên</h1>
+                       <div class="col_7-3">
+                           <div>
+                               <h2>Sữa Chua Làm Nhà</h2>
+                               <p class="new-product_p">
+                                   Học làm sữa chua tại gia cùng chuyên gia.Trong thực đơn dinh dưỡng của các bà mẹ cho con trẻ và các thành viên trong gia đình đều 
+                                   không thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kì tốt cho sức khỏe này. Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp 
+                                   đã được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nhà. Như vậy, liệu sữa chua nhà làm và sữa chua công 
+                                   nghiệp thì loại nào tốt sức khỏe của chúng ta hơn? Nếu là một người yêu thích nấu ăn bạn sẽ chọn sữa nhà làm hay mua sữa chua công 
+                                   nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ.
+                                   <a href="#">Xem chi tiết</a>
+                               </p>
+                           </div>
+                           <div>
+                               <video src="./data/images/trangchu/yogurt.mp4" class="vid-img" controls="controls"></video>
+                           </div>
+                       </div>
+                   </div>
+    
+                   <div class="instruc">
+                       <h2>Hướng Dẫn Làm Sữa Chua Không Đường</h2>
+                       <div class="col_1-1">
+                           <div>
+                               <h3>Nguyên liệu làm sữa chua không đường</h3>
+                               <ul>
+                                   <li>1 lít sữa tươi không đường</li>
+                                   <li>1 hộp sữa chua men cái không đường (bạn có thể mua sữa chua 
+                                       đóng hộp không đường như Vinamilk, TH True Milk,....)
+                                   </li>
+                                   <li>Dụng cụ nấu và ủ sữa chua</li>
+                               </ul>
+                           </div>
+                           <div>
+                               <h3>Các bước thực hiện</h3>
+                               <ol>
+                                   <li>Cho sữa chua không đường vào nồi, đun nóng lên và khuấy đều, nhẹ tay theo 1 chiều. Tới khi sữa đạt khoảng 40 độ C thì tắt bếp. Bạn có thể dùng tay để kiểm tra, thấy sữa ấm vừa phải là được</li>
+                                   <li>Đổ hộp sữa chua làm men cái vào và khuấy đều, múc vào hũ và đem đi ủ 6-8 tiếng</li>
+                                   <li>Sau khi ủ xong, bạn có thể dùng 1 hũ sữa chua vừa ủ để ăn thử, nếu thấy đạt vị sữa chua rồi có thể bảo quản trong ngăn mát tủ lạnh và thưởng thức dần nhé</li>
+                               </ol>
+                           </div>
+                       </div>
+                   </div>
+    
+                   <h2>Đặt Hàng Ngay</h2>
+                   <div class="order-wrap">
+                       <div class="order">
+                           <img src="./data/images/trangchu/order_1.png" class="order-img" alt="Không load được ảnh">
+                           <p>Gọi Điện</p>
+                       </div>   
+                       <div class="order">
+                           <img src="./data/images/trangchu/order_2.png" class="order-img" alt="Không load được ảnh">
+                           <p>Đặt Hàng</p>
+                        </div>   
+                        <div class="order">
+                           <img src="./data/images/trangchu/order_3.png" class="order-img" alt="Không load được ảnh">
+                           <p>Nhận Hàng</p>
+                        </div>   
+                        <div class="order">
+                           <img src="./data/images/trangchu/order_4.png" class="order-img" alt="Không load được ảnh">
+                           <p>Thanh Toán</p>
+                       </div>
+                   </div>
+               </div>
+           </article>
+       </main>
+    </div>
+    <footer>
+        <span class="footer-link">
+            <p>
+                &#169 Bản quyền thuộc về FreeeVN, 
+            </p>
+            <a href="#">
+                <i class="footer-link-facebook fab fa-facebook-f"></i>
+            </a> 
+            <a href="#">
+                <i class="footer-link-twitter fab fa-twitter"></i>
+            </a> 
+            <a href="#">
+                <i class="footer-link-pinterest fab fa-pinterest"></i>
+            </a> 
+        </span>
+        <span class="footer-back">
+            <a href="#logo">
+                <img src="./data/images/top.png" alt="" class="footer-back-img">
+            </a>
+        </span>
+    </footer>
+    
+</div>
+  
+
+
+</body>
+<script src="main.js"></script>
+</html>
