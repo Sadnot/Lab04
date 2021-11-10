@@ -274,6 +274,10 @@ $(document).ready(function(){
     var W = $(window).width();
     var wsmall = (W - $("main").width());
     console.log(wsmall);
+
+    // bắt width of window, nếu kích thước nhỏ, sẽ gán ads vào footer, và ngược lại, ads sẽ dc thêm vào class 
+    //  left-ads trong main-content ( display flex width header and content home page)
+    // anh có css lại thêm một số thuộc tính vào các element ads, em xem lại bên stylelabp3,.css
     if(wsmall<200){
     $("footer").append("<div id='adscontainer'></div>");
     $("#adscontainer").append("<span id='adstext'></span>");
@@ -302,6 +306,7 @@ function adsVerEffect() {
 
     var W = 1/2*($(window).width() - $("main").width());
     var topadstext = $("#adscontainer").height() - $("#adstext").height();
+    // trước khi hiển thị theo chiều dọc, thì xóa đi thuộc tính cũ bên horizon, bằng cách remove class name
     $("#adscontainer").className = $("#adscontainer").removeClass("adshorcontainer");
     $("#adscontainer").addClass("adsvercontainer");
     $("#adscontainer").css({ "width": "W"});
@@ -316,6 +321,7 @@ function adsHorEffect() {
     var widthmain = $("main").width();
     var leftadscontainer = $("#leftcontainer").width;
     var leftatnimate = $("#adscontainer").width() - $("#adstext").width();
+    // remove class name của vertical adsvertise
     $("#adscontainer").className = $("#adscontainer").removeClass("adsvercontainer");
 
     $("#adscontainer").addClass("adshorcontainer container");
