@@ -271,15 +271,25 @@ $(document).ready(function(){
 
     var d = new Date();
     var ads = "Khách hàng có ngày sinh trong tháng " + d.getMonth() + "sẽ được tặng 2 phần sữa chua dâu cho đơn hàng đầu tiên trong tháng.";
-
+    var W = $(window).width();
+    var wsmall = (W - $("main").width());
+    console.log(wsmall);
+    if(wsmall<200){
     $("footer").append("<div id='adscontainer'></div>");
     $("#adscontainer").append("<span id='adstext'></span>");
     $("#adstext").append("<h2></h2>");
     $("h2").text(ads);
+    }
+    else{
+        $(".left-ads").append("<div id='adscontainer'></div>");
+        $("#adscontainer").append("<span id='adstext'></span>");
+        $("#adstext").append("<h2></h2>");
+        $("h2").text(ads);
+    }
     
 
 function showads() {
-    var W = 1/2*($(window).width() - $("main").width());
+    var W = ($(window).width() - $("main").width());
     if (W >= 200) {
          adsVerEffect()
     }
@@ -292,20 +302,21 @@ function adsVerEffect() {
 
     var W = 1/2*($(window).width() - $("main").width());
     var topadstext = $("#adscontainer").height() - $("#adstext").height();
-    
-    $("#adscontainer").addClass("adsvercontainer container");
+    $("#adscontainer").className = $("#adscontainer").removeClass("adshorcontainer");
+    $("#adscontainer").addClass("adsvercontainer");
     $("#adscontainer").css({ "width": "W"});
-    $("#adstext").addClass("adsvertext adstext");
-    $("#adstext").css({ "top": "$('.adscontainer').height()"});
-    $("#adstext").animate ({"top": "topadstext"}, 30000, function(){ adsVerEffect()});
+    $("#adscontainer").addClass("adsvertext adstext");
+    $("#adscontainer").css({ "top": "$('#adscontainer').height()"});
+    $("#adscontainer").animate ({"top": "topadstext"}, 30000, function(){ adsVerEffect()});
 }
 
 function adsHorEffect() {
-
+    //console.log('123');
     var leftmain = $("main").position().left;
     var widthmain = $("main").width();
     var leftadscontainer = $("#leftcontainer").width;
     var leftatnimate = $("#adscontainer").width() - $("#adstext").width();
+    $("#adscontainer").className = $("#adscontainer").removeClass("adsvercontainer");
 
     $("#adscontainer").addClass("adshorcontainer container");
     $("#adscontainer").css({ "left": "leftmain"});

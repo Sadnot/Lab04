@@ -505,6 +505,9 @@ footer {
 }
 
 /* Bổ sung Trang chủ phần quảng cáo */
+.main-content{
+	max-width: calc(100% - 200px);
+}
 .container {
 	position:fixed;
 	border:1px solid red;
@@ -519,6 +522,15 @@ footer {
 	left:0;
 	top:10px;
 	height:300px;
+	position: relative;
+}
+.adsvercontainer{
+	left:0;
+	top:10px;
+	height:300px;
+	width: 200px;
+	position: relative;
+	border: 1px solid red;
 }
 
 .adsvertext {
